@@ -74,7 +74,7 @@ h3, .btn1 {
 
 .btn1 {
     display: block;
-       background-color: transparent;
+    background-color: transparent;
     color: var(--color3);
   
     padding: 12px 24px;
@@ -102,8 +102,6 @@ label {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(45px, 7vw, 80px);
-    line-height: 0.95;
     color: var(--color4);
 }
 
@@ -186,7 +184,7 @@ h3 {
     transform: translateY(-2px);
 }
             
-
+/* HEADER */
 header {
     background-color:#0A0A0A;
     position: sticky;
@@ -236,6 +234,7 @@ header nav ul li {
     animation: fadeInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
+/* EFFET SURVOL */
 header nav ul li:nth-child(1) { animation-delay: 0.1s; }
 header nav ul li:nth-child(2) { animation-delay: 0.4s; }
 header nav ul li:nth-child(3) { animation-delay: 0.6s; }
@@ -337,13 +336,19 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
 .divsec2 h3 {
     padding-bottom: 30px;
 }
-
-.divsec2 .divsec20, .divsec2 .divsec21 {
+.divsec220{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
     padding-bottom: 40px;
 }
+.divsec20, .divsec21, .divsec221{
+        text-align-last: center;
+        gap: 40px;
+
+    }
+
+
 
 
 .divsec2 .divsec20 article, .divsec2 .divsec21 article {
@@ -370,10 +375,11 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     transform: scale(1.1);
 }
 
-.divsec2 .divsec20 p, .divsec2 .divsec21 p {
+.divsec2 .divsec20 p, .divsec2 .divsec21 p, .divsec2 .divsec221 p {
     font-size: 15px;
     color: var(--color4);
     margin-top: 10px;
+    padding-bottom: 40px;
 }
 
 /* SECTION 3 - PROJETS */
@@ -397,7 +403,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     padding: 20px;
 }
 
-#section3 .secdiv30 article {
+#section3 .secdiv30 .div30 {
     background-color: var(--color1); 
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
@@ -406,32 +412,32 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-#section3 .secdiv30 article:hover {
+#section3 .secdiv30 .div30:hover {
     transform: translateY(-4px);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
     border-color: rgba(255, 255, 255, 0.08);
 }
 
-#section3 .secdiv30 article img {
+#section3 .secdiv30 .div30 img {
     width: 100%; 
     height: 256px;
     object-fit: cover;
 }
 
-#section3 .secdiv30 article div {
+#section3 .secdiv30 .div30 div {
     padding: 25px;
 }
 
-#section3 .secdiv30 article div h3 {
+#section3 .secdiv30 .div30 div h3 {
     margin-bottom: 10px;
 }
 
-#section3 .secdiv30 article div p {
+#section3 .secdiv30 .div30 div p {
     font-size: 15px;
     color: var(--color5);
 }
 
-#section3 .secdiv30 article div ul {
+#section3 .secdiv30 .div30 div ul {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -439,7 +445,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     margin-top: 15px;
 }
 
-#section3 .secdiv30 article div ul li {
+#section3 .secdiv30 .div30 div ul li {
     border-radius: 4px;
     background-color: var(--color2);
     color: var(--color3); 
@@ -449,7 +455,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-#section3 .secdiv30 article div a {
+#section3 .secdiv30 .div30 div a {
     color: var(--color3);
     font-weight: 500;
 }
@@ -579,7 +585,7 @@ footer .footerdiv .idiv a > i:hover {
     transform: scale(1.1);
 }
 
-
+/* APPARTION AVEC MOUVEMENT VERS LE HAUT */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -591,6 +597,7 @@ footer .footerdiv .idiv a > i:hover {
     }
 }
 
+/* APPARTION AVEC EFFET ZOOM */
 @keyframes fadeInScale {
     from {
         opacity: 0;
@@ -603,7 +610,7 @@ footer .footerdiv .idiv a > i:hover {
 }
 
 
-
+/* PAGE A PROPOS */
 #sec1page2 div {
     max-width: 1440px;
     margin: auto;
@@ -623,7 +630,7 @@ footer .footerdiv .idiv a > i:hover {
   text-align: center;
 }
 
-/* Ton image de profil en arrière-plan */
+
 #sec1page2 img {
     position: absolute;
     top: 50%;
@@ -635,6 +642,7 @@ footer .footerdiv .idiv a > i:hover {
     z-index: 1;
 
 }
+
 #sec2page2 {
     max-width: 1536px;
     margin: auto;
@@ -653,15 +661,12 @@ footer .footerdiv .idiv a > i:hover {
     gap: 40px;
 }
 
-/* #sec2page2 div {
-    flex: 1.2;
-} */
+
 
 #sec2page2 div p {
     font-size: 16px;
     line-height: 28px;
     color: var(--color5);
-    /* margin-bottom: 25px; */
     width: 90%;
     text-align: justify;
 }
@@ -762,7 +767,7 @@ footer .footerdiv .idiv a > i:hover {
     padding: 20px;
 }
 
-/* SECTION 3 PARCOURS */
+/* PAGE PARCOURS */
 #sec3page2 {
     background-color: var(--color2);
     padding: 80px 20px;
@@ -792,7 +797,7 @@ footer .footerdiv .idiv a > i:hover {
     text-align: center;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE TABLETTE */
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: 48px;
@@ -809,6 +814,8 @@ footer .footerdiv .idiv a > i:hover {
     }
 }
 
+/* RESPONSIVE MOBILE */
+
 @media screen and (max-width: 767px) {
     header #burgerMenu {
         display: block;
@@ -819,13 +826,27 @@ footer .footerdiv .idiv a > i:hover {
     header nav ul {
         display: none;
     }
-
+    #section1 .secdiv1{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .secdiv1 h2{
+        padding-left: 0;
+    }
+    .secdiv1 img{
+        justify-self: center;
+    }
+ 
     #sec1page2 div {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
-
+    .secdiv1 img{
+        width:200px;
+        height: 200px;
+    }
     #sec1page2 h1 {
         position: static;
         width: 100%;
@@ -833,11 +854,19 @@ footer .footerdiv .idiv a > i:hover {
     }
     #sec2page2,#sec3page2, #sec4page2{
         padding: 0;
-        p{
-            padding: 20px;
-        }
+       
     }
+    #sec2page2,#sec3page2, #sec4page2 p{
+            padding: 20px;
+        
 
+    }
+    #sec3page2{
+        padding-top: 40px;
+    }
+#sec4page2{
+    padding-top: 40px;
+}
     #sec1page2 img {
         width: 70%;
     }
@@ -897,14 +926,25 @@ footer .footerdiv .idiv a > i:hover {
     .psec {
         padding: 20px;
         width: 100%;
-        text-align: justify;
     }
 
     .btn {
         margin-top: 50px;
     }
-
-    .footerdiv {
+    .btn1{
+        margin-top: 40px;
+    }
+    .divsec220{
+        display: grid;
+        grid-template-columns: 1fr ;
+        text-align: center;
+    }
+    .divsec20, .divsec21, .divsec221{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align-last: center;
+    }
+    footer .footerdiv {
          display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -913,7 +953,8 @@ footer .footerdiv .idiv a > i:hover {
         gap: 20px;
 
     }
-    .idiv, .pdiv{
+   footer .footerdiv .idiv{
         justify-self: center;
+        padding-bottom: 40px;
     }
 }
