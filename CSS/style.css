@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* GENERAL */
 :root {
 
     --color1: #0A0A0A; 
@@ -250,7 +251,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     width: 100%;
     height: 700px;
     align-content: center;
-     overflow-x: hidden;  
+     /* overflow-x: hidden;   */
 }
 
 #section1 .secdiv1, #sec1page4 .secdiv1 {
@@ -536,8 +537,8 @@ footer {
 footer .footerdiv {
     max-width: 1536px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+display: grid;
+grid-template-columns: 1fr 1Fr;
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
@@ -559,7 +560,9 @@ footer .footerdiv p {
 footer .footerdiv .idiv {
     justify-self: end;
 }
-
+.pdiv{
+    justify-self: end;
+}
 footer .footerdiv .idiv a > i {
     font-size: 17px;
     border-color: transparent;
@@ -624,7 +627,7 @@ footer .footerdiv .idiv a > i:hover {
 #sec1page2 img {
     position: absolute;
     top: 50%;
-    left: 80%;
+     left: 30%; 
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 400px; 
@@ -693,6 +696,9 @@ footer .footerdiv .idiv a > i:hover {
 #sec4page2 ul {
     padding-top: 20px;
     padding-left: 20px;
+}
+#sec4page2 li{
+    color: var(--color5);
 }
 
 
@@ -825,6 +831,12 @@ footer .footerdiv .idiv a > i:hover {
         width: 100%;
         font-size: 34px;
     }
+    #sec2page2,#sec3page2, #sec4page2{
+        padding: 0;
+        p{
+            padding: 20px;
+        }
+    }
 
     #sec1page2 img {
         width: 70%;
@@ -884,7 +896,7 @@ footer .footerdiv .idiv a > i:hover {
 
     .psec {
         padding: 20px;
-        width: 90%;
+        width: 100%;
         text-align: justify;
     }
 
@@ -893,9 +905,15 @@ footer .footerdiv .idiv a > i:hover {
     }
 
     .footerdiv {
-        display: grid;
+         display: grid;
         grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         gap: 20px;
+
+    }
+    .idiv, .pdiv{
+        justify-self: center;
     }
 }
