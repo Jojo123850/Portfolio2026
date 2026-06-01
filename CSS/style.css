@@ -6,11 +6,11 @@
 
 :root {
 
-    --color1: #0A0A0A;   /* Noir pur ultra-profond */
-    --color2: #161618;   /* Gris de fonderie pour les cartes */
-    --color3: #FFFFFF;   /* Éléments clés et boutons en blanc pur */
-    --color4: #F5F5F7;   /* Texte principal blanc argenté */
-    --color5: #86868B;   /* Texte secondaire gris Apple */
+    --color1: #0A0A0A; 
+    --color2: #161618;  
+    --color3: #FFFFFF;   
+    --color4: #F5F5F7;   
+    --color5: #86868B;  
     --color6: #DB8084;
 }
 
@@ -672,12 +672,12 @@ footer .footerdiv .idiv a > i:hover {
     box-shadow: 0px 15px 35px rgba(0,0,0,0.5);
     border-radius: 16px;
 }
-#sec3page2{
-    .sec3page2div{
+
+.sec3page2div{
         max-width: 1536px;
         margin: auto;
     }
-}
+
 #sec4page2 {
     max-width: 1536px;
     margin: auto;
