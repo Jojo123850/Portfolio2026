@@ -24,7 +24,6 @@ a {
     color: var(--color5); 
     position: relative;
     padding-bottom: 4px;
-    /* transition: color 0.3s ease-in-out; */
 }
 
 /* Effet de ligne qui se dessine au survol */
@@ -823,7 +822,7 @@ footer .footerdiv .idiv a > i:hover {
     header #burgerMenu {
         display: block;
         font-size: 20px;
-        color: #121212; 
+        color: var(--color5); 
     }
 
     header nav ul {
