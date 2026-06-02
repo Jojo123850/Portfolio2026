@@ -198,7 +198,6 @@ header div {
     height: 75px;
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden;
     align-items: center;
     padding: 20px;
 }
