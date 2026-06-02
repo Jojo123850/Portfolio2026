@@ -12,7 +12,7 @@
     --color3: #FFFFFF;   
     --color4: #F5F5F7;   
     --color5: #86868B;  
-    --color6: #DB8084;
+
 }
 
 #burgerMenu {
@@ -24,7 +24,7 @@ a {
     color: var(--color5); 
     position: relative;
     padding-bottom: 4px;
-    transition: color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* transition: color 0.3s ease-in-out; */
 }
 
 /* Effet de ligne qui se dessine au survol */
@@ -38,7 +38,7 @@ a::after {
     left: 0;
     background-color: var(--color3);
     transform-origin: bottom right;
-    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.5s ease-in-out;
 }
 
 a:hover {
@@ -84,7 +84,7 @@ h3, .btn1 {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s ease-in-out;
     border-radius: 8px;
 }
 
@@ -142,7 +142,7 @@ h3 {
     margin-top: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s ease-in-out;
     border-radius: 8px;
 }
 
@@ -174,7 +174,7 @@ h3 {
     place-self: flex-start;
     border: 2px solid var(--color3);
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s ease-in-out;
     border-radius: 8px;
 }
 
@@ -229,9 +229,7 @@ header nav ul li a::after {
 }
 
 header nav ul li {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fadeInUp 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
 
 /* EFFET SURVOL */
@@ -267,7 +265,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
 #section1 .secdiv1 div {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fadeInUp 0.8s ease-in-out forwards;
     animation-delay: 0.5s;
 }
 
@@ -299,7 +297,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     
     opacity: 0;
     transform: scale(0.9);
-    animation: fadeInScale 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fadeInScale 0.8s ease-in-out forwards;
     animation-delay: 0.7s;
 }
 
@@ -357,11 +355,11 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     padding: 25px 15px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.02);
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s ease-in-out;
 
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation: fadeInUp 0.7s ease-in-out forwards;
 }
 
 
@@ -409,7 +407,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.02);
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s ease-in-out;
 }
 
 #section3 .secdiv30 .div30:hover {
@@ -490,14 +488,10 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     border: 1px solid rgba(255, 255, 255, 0.08);
     color: var(--color4);
     font-family: "Inter", sans-serif;
-    transition: border-color 0.3s ease;
+
 }
 
-#section4 .div500 form input:focus,
-#section4 .div500 form textarea:focus {
-    outline: none;
-    border-color: var(--color3);
-}
+
 
 #section4 .div500 form textarea {
     height: 130px;
@@ -576,7 +570,7 @@ footer .footerdiv .idiv a > i {
     color: var(--color4);
     padding: 10px;
     border-radius: 50%;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s ease-in-out;
 }
 
 footer .footerdiv .idiv a > i:hover {
@@ -589,11 +583,11 @@ footer .footerdiv .idiv a > i:hover {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(25px);
+         transform: translateY(25px); 
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+         transform: translateY(0); 
     }
 }
 
@@ -719,7 +713,7 @@ footer .footerdiv .idiv a > i:hover {
     box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
     border-radius: 6px;
     overflow: hidden; 
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s ease-in-out;
 }
 
 .artpage2 article:hover {
@@ -749,7 +743,7 @@ footer .footerdiv .idiv a > i:hover {
     box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
     border-radius: 6px;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s ease-in-out;
 }
 
 .art1page2 article:hover {
@@ -870,7 +864,9 @@ footer .footerdiv .idiv a > i:hover {
     #sec1page2 img {
         width: 70%;
     }
-
+#sec2page2{
+    padding: 0;
+}
     #sec2page2 > div {
         flex-direction: column;
         align-items: center;
@@ -879,6 +875,7 @@ footer .footerdiv .idiv a > i:hover {
 
     #sec2page2 div p {
         width: 100%;
+        padding: 20px;
     }
 
     #sec2page2 article {
@@ -888,6 +885,15 @@ footer .footerdiv .idiv a > i:hover {
     #sec2page2 img {
         width: 100%;
         max-width: 100%;
+        padding: 0;
+         border-radius: 0;
+    }
+    #sec3page2{
+        padding: 0;
+        padding-top: 40px;
+    }
+    .artpage2{
+        padding: 0;
     }
 
     #sec3page2 .artpage2,
@@ -927,7 +933,9 @@ footer .footerdiv .idiv a > i:hover {
         padding: 20px;
         width: 100%;
     }
-
+    .pdiv{
+        place-self: center;
+    }
     .btn {
         margin-top: 50px;
     }
