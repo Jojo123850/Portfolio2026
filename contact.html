@@ -36,32 +36,34 @@
     </section>
 
         <section id="section4">
-            <h2>Contactez-moi</h2>
-            <p class="psec">Découvrez une sélection de mes travaux récents qui démontrent mes compétences en développement web et design d'interface.</p>
-            
-            <div class="div500">
-                <form action="#">
-                    <div class="div501">
-                        <div>
-                            <label for="contactName">Name</label> <br>
-                            <input type="text" id="contactName">
+            <div class="sect4">
+                <h2>Contactez-moi</h2>
+                <p class="psec">Découvrez une sélection de mes travaux récents qui démontrent mes compétences en développement web et design d'interface.</p>
+                
+                <div class="div500">
+                    <form action="#">
+                        <div class="div501">
+                            <div>
+                                <label for="contactName">Name</label> <br>
+                                <input type="text" id="contactName" required>
+                            </div>
+                            <div class="formAA">
+                                <label for="contactEmail">Email</label> <br>
+                                <input type="email" id="contactEmail" required>
+                            </div>
                         </div>
-                        <div class="formAA">
-                            <label for="contactEmail">Email</label> <br>
-                            <input type="email" id="contactEmail">
+                        
+                        <label for="demande">Message</label> <br>
+                        <textarea id="demande" name="message"></textarea>
+                        
+                        <div class="check">
+                            <input type="checkbox" id="rgpd"required>
+                            <label for="rgpd">J'accepte que mes données soient traitées conformément à la politique de confidentialité. Elles ne seront utilisées que pour répondre à ma demande.</label>
                         </div>
-                    </div>
-                    
-                    <label for="demande">Message</label> <br>
-                    <textarea id="demande" name="message"></textarea>
-                    
-                    <div class="check">
-                        <input type="checkbox" id="rgpd">
-                        <label for="rgpd">J'accepte que mes données soient traitées conformément à la politique de confidentialité. Elles ne seront utilisées que pour répondre à ma demande.</label>
-                    </div>
-                    
-                    <button type="submit" class="submit">Envoyer le message</button>
-                </form>
+                        
+                        <button type="submit" class="submit">Envoyer le message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

@@ -44,52 +44,55 @@
 
         <!-- SECTION 2 : A PROPOS & COMPETENCES -->
         <section id="section2">
-            <h2>À propos de moi</h2>
-            <div class="divsec2">
-                <div class="divsec200">
-                    <h3>Mon parcours</h3>
-                    <p>Avant de me lancer dans le développement, je me suis investie dans des projets liés à l’environnement et à l’engagement associatif. Aujourd’hui, je combine cette sensibilité avec le code pour imaginer des applications qui ont un impact positif.</p>
-                    <p>Chaque projet est pour moi une occasion d’apprendre, de créer et de repousser mes limites afin de transformer des idées en expériences digitales modernes.</p>
-                    <p>Je suis passionnée de la technologie qui a un impact fort sur la société, et je me défie d'aller encore plus loin dans cette aventure.</p>   
-                </div>
+            <div class="sect2">
+                <h2>À propos de moi</h2>
+                <div class="divsec2">
+                    <div class="divsec200">
+                        <h3>Mon parcours</h3>
+                        <p>Avant de me lancer dans le développement, je me suis investie dans des projets liés à l’environnement et à l’engagement associatif. Aujourd’hui, je combine cette sensibilité avec le code pour imaginer des applications qui ont un impact positif.</p>
+                        <p>Chaque projet est pour moi une occasion d’apprendre, de créer et de repousser mes limites afin de transformer des idées en expériences digitales modernes.</p>
+                        <p>Je suis passionnée de la technologie qui a un impact fort sur la société, et je me défie d'aller encore plus loin dans cette aventure.</p>   
+                    </div>
+                    
+                    <div class="divsec22">
+                        <h3>Mes compétences</h3>
+                        <div class="divsec220">
+                            <div class="divsec20">
+                                <div>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <p>HTML5</p>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-css3"></i>
+                                    <p>CSS3</p>
+                                </div>
+                            </div>
+                            <div class="divsec21">
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-php"></i>
+                                    <p>PHP</p>
+                                </div>
+                            </div>
+        
+                            <div class="divsec221">
                 
-                <div class="divsec22">
-                    <h3>Mes compétences</h3>
-                    <div class="divsec220">
-                        <div class="divsec20">
-                            <div>
-                                <i class="fa-brands fa-html5"></i>
-                                <p>HTML5</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-css3"></i>
-                                <p>CSS3</p>
-                            </div>
-                        </div>
-                        <div class="divsec21">
-                            <div>
-                                <i class="fa-brands fa-js"></i>
-                                <p>JavaScript</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-php"></i>
-                                <p>PHP</p>
-                            </div>
-                        </div>
-    
-                        <div class="divsec221">
-            
-                            <div>
-                                <i class="fa-regular fa-circle"></i>
-                                <p>Responsive</p>
-                            </div>
-                            <div>
-                                <i class="fa-regular fa-circle"></i>
-                                <p>UI/UX Design</p>
+                                <div>
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>Responsive</p>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-circle"></i>
+                                    <p>UI/UX Design</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -138,32 +141,34 @@
 
         <!-- SECTION 4 : CONTACT -->
         <section id="section4">
-            <h2>Contactez-moi</h2>
-            <p class="psec">Découvrez une sélection de mes travaux récents qui démontrent mes compétences en développement web et design d'interface.</p>
-            
-            <div class="div500">
-                <form action="#">
-                    <div class="div501">
-                        <div>
-                            <label for="nomClient">Name</label> <br>
-                            <input type="text" id="nomClient">
+            <div class="sect4">
+                <h2>Contactez-moi</h2>
+                <p class="psec">Découvrez une sélection de mes travaux récents qui démontrent mes compétences en développement web et design d'interface.</p>
+                
+                <div class="div500">
+                    <form action="#">
+                        <div class="div501">
+                            <div>
+                                <label for="nomClient">Name</label> <br>
+                                <input type="text" id="nomClient" required>
+                            </div>
+                            <div class="formAA">
+                                <label for="emailClient">Email</label> <br>
+                                <input type="email" id="emailClient">
+                            </div>
                         </div>
-                        <div class="formAA">
-                            <label for="emailClient">Email</label> <br>
-                            <input type="email" id="emailClient">
+                        
+                        <label for="demande">Message</label> <br>
+                        <textarea id="demande" name="message" required></textarea>
+                        
+                        <div class="check">
+                            <input type="checkbox" id="rgpd" required>
+                            <label for="rgpd">J'accepte que mes données soient traitées conformément à la politique de confidentialité. Elles ne seront utilisées que pour répondre à ma demande.</label>
                         </div>
-                    </div>
-                    
-                    <label for="demande">Message</label> <br>
-                    <textarea id="demande" name="message"></textarea>
-                    
-                    <div class="check">
-                        <input type="checkbox" id="rgpd">
-                        <label for="rgpd">J'accepte que mes données soient traitées conformément à la politique de confidentialité. Elles ne seront utilisées que pour répondre à ma demande.</label>
-                    </div>
-                    
-                    <button type="submit" class="submit">Envoyer le message</button>
-                </form>
+                        
+                        <button type="submit" class="submit">Envoyer le message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

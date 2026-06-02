@@ -245,7 +245,7 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 700px;
+    height: 1136px;
     align-content: center;
      /* overflow-x: hidden;   */
 }
@@ -675,16 +675,12 @@ footer .footerdiv .idiv a > i:hover {
 }
 
 .sec3page2div{
-        max-width: 1536px;
-        margin: auto;
-    }
-
-#sec4page2 {
     max-width: 1536px;
     margin: auto;
     padding: 80px 20px;
     background-color: var(--color1);
 }
+
 
 #sec4page2 h3 {
     padding-top: 20px;
@@ -761,10 +757,6 @@ footer .footerdiv .idiv a > i:hover {
 }
 
 /* PAGE PARCOURS */
-#sec3page2 {
-    background-color: var(--color2);
-    padding: 80px 20px;
-}
 
 #sec3page2 .artpage2 article {
     padding: 25px;
@@ -789,6 +781,20 @@ footer .footerdiv .idiv a > i:hover {
     padding-top: 40px;
     text-align: center;
 }
+#sec4page2{
+        background-color: var(--color1);
+}
+#sec4page2 .divsec4{
+        max-width: 1536px;
+        margin: auto;
+        padding: 80px 20px;
+     
+
+    }
+    .art1page2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 1024px) {
@@ -801,10 +807,14 @@ footer .footerdiv .idiv a > i:hover {
         width: 70%;
     }
 
-    #sec3page2 .artpage2, 
-    .art1page2 {
-        grid-template-columns: 1fr;
+    #sec3page2 .artpage2{
+        grid-template-columns: 1fr 1fr;
     }
+       .art1page2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+}
 }
 
 /* RESPONSIVE MOBILE */
@@ -854,11 +864,21 @@ footer .footerdiv .idiv a > i:hover {
         
 
     }
-    #sec3page2{
-        padding-top: 40px;
-    }
 #sec4page2{
     padding-top: 40px;
+    
+}
+#sec4page2 .divsec4{
+     padding: 0;
+    
+
+}
+#sec4page2 .art1page2{
+    padding: 0;
+
+}
+#sec4page2 .art1page2 article{
+    border-radius: 0;
 }
     #sec1page2 img {
         width: 70%;
@@ -889,16 +909,26 @@ footer .footerdiv .idiv a > i:hover {
     }
     #sec3page2{
         padding: 0;
-        padding-top: 40px;
     }
     .artpage2{
         padding: 0;
+    }
+    .sec3page2div{
+        padding: 0;
+        padding-top: 80px;
+    }
+    .sec3page2div h2{
+        padding-top: 40px;
+    }
+    .sec3page2div p{
+        padding: 20px;
     }
 
     #sec3page2 .artpage2,
     #sec4page2 .art1page2 {
         grid-template-columns: 1fr;
         gap: 40px;
+        padding: 0;
     }
 
     #section2 .divsec2 {
