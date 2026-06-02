@@ -26,7 +26,7 @@ a {
     padding-bottom: 4px;
 }
 
-/* Effet de ligne qui se dessine au survol */
+/* Effet de ligne qui se dessine*/
 a::after {
     content: '';
     position: absolute;
@@ -246,7 +246,6 @@ header nav ul li:nth-child(4) { animation-delay: 0.8s; }
     width: 100%;
     height: 1136px;
     align-content: center;
-     /* overflow-x: hidden;   */
 }
 
 #section1 .secdiv1, #sec1page4 .secdiv1 {
@@ -939,7 +938,7 @@ footer .footerdiv .idiv a > i:hover {
     }
 
     #section3 .secdiv30 {
-        padding: 0;
+        /* padding: 0; */
         grid-template-columns: 1fr;
     }
 
