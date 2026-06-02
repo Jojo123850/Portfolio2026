@@ -19,6 +19,7 @@
     display: none;
 }
 
+/* les liens */
 a {
     text-decoration: none;
     color: var(--color5); 
@@ -237,7 +238,8 @@ header nav ul li:nth-child(3) { animation-delay: 0.6s; }
 header nav ul li:nth-child(4) { animation-delay: 0.8s; }
 
 
-
+/* LES SECTIONS */
+/* SECTION 1  */
 #section1, #sec1page4,#sec1page2 {
     background-image: linear-gradient( to bottom, rgba(10, 10, 10, 0.96) 0%, rgba(10, 10, 10, 0.88) 70%,var(--color1) 100%), url(../img/grisfonce.jpg);
     background-repeat: no-repeat;
@@ -625,7 +627,7 @@ footer .footerdiv .idiv a > i:hover {
 #sec1page2 img {
     position: absolute;
     top: 50%;
-     left: 30%; 
+     left: 50%; 
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 400px; 
@@ -758,7 +760,6 @@ footer .footerdiv .idiv a > i:hover {
 
 #sec3page2 .artpage2 article {
     padding: 25px;
-    background-color: var(--color1);
 }
 
 
@@ -814,6 +815,9 @@ footer .footerdiv .idiv a > i:hover {
     
 }
 }
+#sec2page2 img{
+    align-self: center;
+}
 
 /* RESPONSIVE MOBILE */
 
@@ -866,11 +870,7 @@ footer .footerdiv .idiv a > i:hover {
     padding-top: 40px;
     
 }
-#sec4page2 .divsec4{
-     padding: 0;
-    
 
-}
 #sec4page2 .art1page2{
     padding: 0;
 
@@ -926,7 +926,6 @@ footer .footerdiv .idiv a > i:hover {
     #sec4page2 .art1page2 {
         grid-template-columns: 1fr;
         gap: 40px;
-        padding: 0;
     }
 
     #section2 .divsec2 {
